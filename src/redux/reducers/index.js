@@ -3,6 +3,7 @@ import { SET_FIRST_NAME, SET_LAST_NAME } from "../types";
 const INITIAL_STATE = {
   firstName: "John",
   lastName: "Doe",
+  message: "",
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -18,6 +19,6 @@ export default (state = INITIAL_STATE, action) => {
         ...action.payload,
       };
     default:
-      return state;
+      return INITIAL_STATE;
   }
 };
