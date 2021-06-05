@@ -1,6 +1,6 @@
 import thunk from "redux-thunk";
 import { createStore, applyMiddleware, combineReducers } from "redux";
-import Reducer from "./redux/reducers";
+import Reducer from "../reducers";
 
 const initialState = {};
 const reducers = combineReducers({
